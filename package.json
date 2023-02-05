@@ -1,8 +1,8 @@
 {
     "name": "colorthief",
-    "version": "2.3.2",
+    "version": "3.0.0",
     "author": {
-        "name": "Lokesh Dhakar",
+        "name": "Lokesh Dhakar // Shirley de Jong/Nogonad",
         "email": "lokesh.dhakar@gmail.com",
         "url": "http://lokeshdhakar.com/"
     },
@@ -19,36 +19,26 @@
     "homepage": "http://lokeshdhakar.com/projects/color-thief/",
     "repository": {
         "type": "git",
-        "url": "https://github.com/lokesh/color-thief.git"
+        "url": "https://github.com/shirleydejong/color-thief.git"
     },
     "license": "MIT",
-    "source": "src/color-thief.js",
-    "main": "dist/color-thief.js",
-    "module": "dist/color-thief.mjs",
-    "umd:main": "dist/color-thief.umd.js",
-    "amdName": "ColorThief",
+    "source": "./src/color-thief-node.js",
+    "main": "./src/color-thief.js",
+    "type": "module",
     "scripts": {
-        "build": "microbundle --no-sourcemap && node ./build/build.js",
+        "build": "microbundle -i ./src/color-thief.js -o ./dist/color-thief.js --format modern && node ./build/build.js",
         "watch": "microbundle watch --no-sourcemap",
-        "dev": "http-server",
-        "test": "mocha && cypress run --config video=false",
-        "test:browser": "cypress open",
-        "test:node": "mocha"
+        "test": "mocha"
     },
     "devDependencies": {
-        "@node-minify/core": "^4.0.5",
-        "@node-minify/uglify-es": "^4.0.5",
         "chai": "^4.2.0",
         "chai-as-promised": "^7.1.1",
-        "cypress": "^3.4.0",
-        "eslint": "^5.16.0",
-        "http-server": "^0.11.1",
-        "microbundle": "^0.11.0",
-        "mocha": "^6.2.0",
-        "mustache": "^3.0.1"
+        "microbundle": "^0.15.1",
+        "mocha": "^10.2.0",
+        "mustache": "^4.2.0"
     },
     "dependencies": {
-        "get-pixels": "^3.3.2",
+        "get-pixels-ts": "git+https://github.com/brunoxpeixoto/get-pixels-ts.git",
         "quantize": "github:lokesh/quantize"
     }
 }
