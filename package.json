@@ -38,7 +38,7 @@
         "mustache": "^4.2.0"
     },
     "dependencies": {
-        "get-pixels-ts": "git+https://github.com/brunoxpeixoto/get-pixels-ts.git",
-        "quantize": "github:lokesh/quantize"
+        "get-pixels-ts": "github:brunoxpeixoto/get-pixels-ts",
+        "quantize": "github:shirleydejong/quantize"
     }
 }
