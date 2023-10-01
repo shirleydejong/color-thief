@@ -40,6 +40,6 @@
     },
     "dependencies": {
         "get-pixels-ts": "github:brunoxpeixoto/get-pixels-ts",
-        "quantize": "github:shirleydejong/quantize"
+        "quantize": "github:lokesh/quantize"
     }
 }
