@@ -24,6 +24,7 @@
     "license": "MIT",
     "source": "./src/color-thief-node.js",
     "main": "./src/color-thief.js",
+    "module": "dist/color-thief-node.js",
     "type": "module",
     "scripts": {
         "build": "microbundle -i ./src/color-thief.js -o ./dist/color-thief.js --format modern && node ./build/build.js",
