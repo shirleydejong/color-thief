@@ -1,6 +1,6 @@
 {
     "name": "colorthief",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "author": {
         "name": "Lokesh Dhakar // Shirley de Jong/Nogonad",
         "email": "lokesh.dhakar@gmail.com",
@@ -22,9 +22,8 @@
         "url": "https://github.com/shirleydejong/color-thief.git"
     },
     "license": "MIT",
-    "source": "./src/color-thief-node.js",
-    "main": "./src/color-thief.js",
-    "module": "dist/color-thief-node.js",
+    "browser": "./dist/color-thief.js",
+    "main": "./src/color-thief-node.js",
     "type": "module",
     "scripts": {
         "build": "microbundle -i ./src/color-thief.js -o ./dist/color-thief.js --format modern && node ./build/build.js",
